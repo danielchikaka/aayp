@@ -1,0 +1,41 @@
+{
+  "name": "aayp",
+  "version": "1.0.0",
+  "description": "A website project for The Association of Adventist Young Professionals",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "lodash": "^3.10.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.0",
+    "gulp": "^3.9.0",
+    "gulp-cache": "^0.4.1",
+    "gulp-cssnano": "^2.0.1",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1",
+    "gulp-useref": "^3.0.4",
+    "run-sequence": "^1.1.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielchikaka/aayp.git"
+  },
+  "keywords": [
+    "Responsive",
+    "aayp",
+    "Adventists",
+    "SDA"
+  ],
+  "author": "Daniel Chikaka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielchikaka/aayp/issues"
+  },
+  "homepage": "https://github.com/danielchikaka/aayp#readme"
+}
