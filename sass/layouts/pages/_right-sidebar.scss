@@ -1,0 +1,42 @@
+/**
+     * ------------------------------------------------------------
+     * Right Sidebar
+     * ------------------------------------------------------------
+*/
+
+.with-sidebar{
+	background-color: #777;
+
+	h1{
+		font-size: 34px;
+		color: #f7f7f7;
+		padding-left: 0px;
+		border-left: 0px;
+		line-height: 34px;
+	}
+}
+
+.main-content-wrap-inner{
+	@include span(8.2 of 12  no-gutters inside-static);
+	// border-right: 2px solid #E0DFDB;
+	    padding-right: 70px;
+	    padding-top: 22px;
+}
+
+.about{
+    @extend .main-content-wrap-inner;
+	@include span(12 of 12 );
+
+}
+
+
+.main-sidebar-wrap{
+	@include span(3.5 of 12 last  no-gutters inside-static)
+}
+
+img.featured{
+	width: 100%;
+	height: auto;
+	   @extend .imageStyle;
+	       margin-bottom: 10px;
+}

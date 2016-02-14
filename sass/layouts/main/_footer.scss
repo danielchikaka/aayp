@@ -1,0 +1,204 @@
+/**
+     * ----------------------------------------------------------------
+     * Footer SCSS
+     * ----------------------------------------------------------------
+*/
+#footer-wrapper{
+             background-color:  #f2f2f2;
+                 border-top: 2px solid #E0DFDB;
+                 
+                  color: $gray-base;
+                      padding: 15px;
+                font-size: 14px;
+                    margin-top: 10px;
+            #footer-sep{
+              clear: both;
+              border-bottom: 4px solid  #ddd;
+            }
+
+        .footer-col-div{
+            @include span(3.9 of 12);
+                margin-bottom: 20px;
+
+
+
+
+
+
+            ul#social-icons{
+                  list-style: none;
+                  padding: 0px;
+
+                  li{
+                        height: 32px;
+                        width: 32px;
+                        float: left;
+                        margin-left: 4px;
+                        a{
+                          height: 32px;
+                          width: 32px;
+                          display: block;
+                          float: left;
+                          background: url("../images/icons-sprite.png") no-repeat;
+
+                          &:hover{
+                            @include transition-none;
+                          }
+
+         
+                        }
+
+                                         .fb{
+                                background-position: 0 0;
+                                &:hover{
+                                    
+                                background-position: 0 -32px;
+                                   @include transition-none;
+                                }
+                          }
+
+                               .twitter{
+                                background-position: -32px  0;
+                                         &:hover{
+                                    
+                                background-position: -32px -32px;
+                                   @include transition-none;
+                                }
+                          }           
+                          .youtube{
+                                background-position: -64px 0;
+                                         &:hover{
+                                    
+                                background-position: -64px -32px;
+                                   @include transition-none;
+                                }
+                          }     
+                          .googleplus{
+                                background-position: -96px  0;
+                                         &:hover{
+                                    
+                                background-position: -96px -32px;
+                                   @include transition-none;
+                                }
+                          }
+                               .linkedin{
+                                background-position: -128px  0;
+                                         &:hover{
+                                    
+                                background-position: -128px -32px;
+                                   @include transition-none;
+                                }
+                          }
+                                       .flikcr{
+                                background-position: -160px  0;
+                                         &:hover{
+                                    
+                                background-position: -160px -32px;
+                                   @include transition-none;
+                                }
+                          }
+                  }
+            }
+
+
+                h4{
+                  // text-transform: uppercase;
+                      // font-weight: 600;
+                }
+
+            p{
+                  margin-top: 45px;
+                      line-height: 25px;
+            }
+
+            ul{
+              padding: 0px;
+              margin: 0px;
+              li{
+                list-style-type: none;
+                margin-bottom: 10px;
+                       a{
+           position: relative;
+           padding-left: 0px;
+               display: inline-block;
+               @extend .text-spacing;
+
+           // &:before{
+           //         font-family: "tanzania-diary-board";
+           //          font-size: 14px;
+           //          top: 1px;
+           //          padding-right: 2px;
+           //          position: absolute;
+           //          left: 0;
+           //          content: "c";
+           // }
+           &:hover{
+               // color: #f8f8f8;
+               text-decoration: none;
+           }
+        }             
+              }
+            }
+        }
+
+
+ul.footer-details{
+      margin-top: 50px;
+}
+
+
+
+
+
+
+    ul#footer-menu{
+    	padding: 0px;
+    	margin: 20px 0;
+    	li{
+    		display: inline-block;
+    		margin-right: 15px;
+
+    		a{
+    			font-size: 13px;
+    			color: #efefef;
+
+    			&:hover{
+              	  		text-decoration: none;
+              	  		color: #fff;
+              	  	}
+
+    		}
+    	}
+    }
+
+
+    #copy{
+    	float: left;
+    	    margin-top: 15px;
+    	p{
+    		margin: 0px;
+    	}
+    }
+
+    #developer{
+    	float: right;
+    	    margin-top: 15px;
+    		p{
+    		margin: 0px;
+
+    	}
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+

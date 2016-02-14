@@ -1,0 +1,207 @@
+/**
+     * ----------------------------------------------------------------
+     * Header CSS 
+     * Author: Daniel Chikaka
+     * Email: daniel.chikaka@ega.go.tz
+     * ----------------------------------------------------------------
+  */
+
+
+    //             .top-navigation-bar{
+    //           padding:  0;
+    //       // position: absolute;
+    //       // right: 0px;
+    //         background-color:  $brand-primary;
+
+    //       ul{
+    //      padding: 10px 0px 6px 5px;
+    //         margin: 0px;
+    //         li{
+    //           list-style-type: none;
+    //               margin-left: 5px;
+    //               line-height: 12px;
+    //               display: inline-block;
+    //                   background-image: url("../images/menu-separator.png");
+    // background-repeat: no-repeat;
+    // background-position: left center;
+    //     padding-left: 25px;
+    // padding-right: 5px;
+    // &:first-child, &:last-child{
+    //   background-image: none;
+    // }
+    //               a{
+    //                 padding: 0 5px;
+    //                 color: #f7f7f7;
+
+    //                 &:hover{
+    //                    color: darken(#f7f7f7, 10%);
+    //                 }
+    //               }
+
+    //               a#lang-picker{
+    //                     margin-left: 30px;
+    //                     font-size: 16px;
+    //                     color: #fbeb0c;
+    //                     // font-family:  $headings-font-family;
+
+    //                     &:hover{
+    //                                    color: darken(#fbeb0c, 10%);
+    //                     }
+    //               }
+    //         }
+    //         clear: both;
+    //       }
+
+          // .pull-right-link-first{
+          //      text-align: right;
+          //      text-transform: uppercase;
+          //      @include span(9 of 12);
+      
+          // }
+
+    //       .pull-right-link-last{
+    //            text-align: right;
+
+    //            @include span(3 of 12  last);
+    //             font-family:  $headings-font-family;
+
+    //             .form-group{
+    //               position: relative;
+    //               margin-bottom: 0px;
+
+    //               input{
+    //             padding: 0 20px 0 8px;
+    // margin: 5px 0;
+    // border-radius: 0;
+
+    //               }
+
+    //               .icon{
+    //                 position: absolute;
+    //                     top: 10px;
+    //                right: 10px;
+
+    //               }
+    //             }
+      
+    
+    //       }
+         
+
+  // }
+
+
+
+
+  #header{
+  	background-color:  #fff;
+        background-color: rgba(255,255,255,0.8);
+    // border-top: 4px solid $brand-primary;
+    position: relative;
+	
+	    // position: fixed;
+    // z-index: 999999999999999999999999999;
+    // width: 100%;
+
+        // border-bottom: 4px solid $brand-primary;
+
+
+
+.header-modifier{
+  position: relative;
+
+
+}
+
+
+  
+  	h1{
+  		  // font-weight: 600;
+  line-height: 1.1;
+        font-size: 28px;
+            margin: 0px;
+      padding-top: 15px;
+    // text-align: center;
+              color: $brand-primary;
+            // @include span(8 of 12 );
+
+            span{
+              font-size: 14px;
+              color: $brand-primary;
+              font-weight: 600;
+            }
+            small{
+                  color: #777;
+                  font-family: arial;
+            }
+  	}
+
+  	#logo{
+  	     // padding: 10px 0;
+          // @include span(2 of 12);
+     margin: 10px 20px 10px 0;
+        float: left;
+
+    }
+
+    #board-logo{
+          @include span(2 of 12  last);
+    padding-right: 0;
+    position: relative;
+        margin: 10px 0 10px;
+
+          img{
+                float: right;
+          }
+
+          ul{
+            position: absolute;
+            left: 0px;
+            top: 10px;
+            li{
+                 list-style-type: none;
+    display: inline-block;
+    border-right: 1px solid #ddd;
+    padding: 0 5px;
+
+    &:last-child{
+        border-right: 0px;
+    }
+    &:first-child{
+      padding-left: 0px;
+    }
+              
+            }
+          }
+
+    }
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

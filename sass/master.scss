@@ -1,0 +1,56 @@
+/**
+     * ----------------------------------------------------------------
+     * CSS SASS file for  Muhas's website
+     * There is SASS Inside, be careful !
+     * Author: Daniel Chikaka
+     * Email: daniel.chikaka@ega.go.tz
+     * ----------------------------------------------------------------
+ */
+ // Import custom grid, codename SUSY ;)
+@import "../bower_components/susy/sass/susy";
+
+ // Import custom Bootstrap variables
+@import "bootstrap-variables";
+
+// Import Bootstrap for Sass
+@import "bootstrap";
+
+
+@import "layouts/base";
+
+
+
+
+@import "icon-fonts";
+
+
+@import "layouts/main/header";
+@import "../bower_components/smartmenus/src/addons/bootstrap/jquery.smartmenus.bootstrap.css";
+@import "layouts/main/menu";
+
+@import "layouts/main/slider-bio";
+@import "layouts/pages/home";
+@import "layouts/main/footer";
+
+@import "layouts/pages/faq";
+@import "layouts/pages/sitemap";
+@import "layouts/pages/right-sidebar";
+@import "layouts/pages/full-width";
+@import "layouts/pages/publications";
+@import "layouts/pages/press-release";
+@import "layouts/pages/videos";
+@import "layouts/pages/news";
+@import "layouts/pages/events";
+@import "../bower_components/strip/dist/css/strip.css";
+@import "layouts/pages/gallery";
+@import "layouts/pages/contact";
+
+// @import "../bower_components/lightbox2/dist/css/lightbox.css";
+@import "../bower_components/mediaelement/build/mediaelementplayer.min.css";
+// @import "layouts/pages/gallery";
+ // @import "layouts/pages/page-with-sidebar";
+// @import "layouts/pages/full-width";
+
+
+
+

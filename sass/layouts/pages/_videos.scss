@@ -1,0 +1,134 @@
+/**
+     * ----------------------------------------------------------------
+     * Videos
+     * Author: Daniel Chikaka
+     * Email: daniel.chikaka@ega.go.tz
+     * ----------------------------------------------------------------
+*/
+
+.main-title{
+  @extend #slider-wrapper;
+  background-color: #000;
+  position: relative;
+  border-bottom: 4px solid $brand-primary;
+	color: #fff;
+  // height: 150px;
+         padding: 37px 0;
+         &:after{
+         	    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.3;
+      background-image: url("../images/videos.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+         }
+      h1{
+      	    margin: 0px;
+    margin-bottom: 15px;
+        text-shadow: 5px 4px 5px #000;
+      }
+      p{
+      
+      	    // font-style: italic;
+      	    font-size: 16px;
+      	        margin: 0px;
+      	        color: #eee;
+      	            text-shadow: 5px 4px 5px #000;
+
+      }
+}
+
+
+
+.videos{
+	font-size: 16px;
+line-height: 28px;
+// text-align: center;
+// border: 0px !important;
+    // padding: 0px  !important;
+
+  ul{
+    padding: 0px;
+    margin: 0px;
+    li{
+          list-style-type: none;
+          clear: both;
+          width: 100%;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+
+      article {
+a{
+  img{
+    float: left;
+    margin-right: 15px;
+  }
+}
+
+
+          .mejs-container {
+    // width: 255px;
+    // height: 155px;
+    float: left;
+    margin-right: 15px;
+}
+
+h4{
+  font-family: $font-family-base;
+  @extend .title-spacing;
+  display: block;
+}
+p{
+  font-family: Georgia;
+}
+      }
+  
+    }
+  }
+
+
+
+}
+
+
+ul.pagination{
+
+		li{
+
+			border-bottom: 0px;
+      width: auto !important;
+
+	  &:nth-child(odd){
+		background-color:  transparent;
+
+		&:hover{
+			background-color: transparent;
+			@include transition(0.4s);
+		}
+	  }
+	  &:nth-child(even){
+		background-color: transparent;
+		&:hover{
+			background-color: transparent;
+			@include transition(0.4s);
+		}
+	  }
+
+		
+	}
+
+}
+

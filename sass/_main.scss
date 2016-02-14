@@ -1,0 +1,37 @@
+/**
+     * ----------------------------------------------------------------
+     * CSS SASS file for APS-HRMNET website
+     * There is SASS Inside, be careful !
+     * Author: Daniel Chikaka
+     * Email: daniel.chikaka@ega.go.tz
+     * ----------------------------------------------------------------
+ */
+
+ // Import custom Bootstrap variables
+@import "bootstrap-variables";
+
+// Import Bootstrap for Sass
+@import "bootstrap";
+
+@import "layouts/base";
+
+
+@import "icon-fonts";
+
+
+@import "layouts/main/header";
+
+@import "../bower_components/Calendario/css/calendar.css";
+@import "../bower_components/Calendario/css/custom_2.css";
+@import "layouts/main/calendar";
+// @import "../bower_components/slick.js/slick/slick";
+// @import "../bower_components/slick.js/slick/slick-theme";
+@import "layouts/main/slider-bio";
+@import "../bower_components/magnific-popup/src/css/main";
+@import "layouts/pages/home";
+ @import "layouts/pages/page-with-sidebar";
+@import "layouts/pages/full-width";
+@import "layouts/main/footer";
+
+
+

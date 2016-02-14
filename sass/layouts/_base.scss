@@ -1,0 +1,393 @@
+    /**
+     * -----------------------------------------------------------------------------------------------
+     * My Mixins
+     * ------------------------------------------------------------------------------------------------
+     */
+     @mixin transition($val){
+  -webkit-transition: all $val ease-out;
+  -moz-transition: all $val ease-out;
+  -o-transition: all $val ease-out;
+  transition: all  $val ease-out;
+}  
+
+     @mixin transition-none{
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}  
+
+@mixin boxShadow($val){
+  -moz-box-shadow: $val ;
+  -webkit-box-shadow: $val ;
+  box-shadow: $val ;
+}
+@mixin borderRadius($val) {
+  border-radius: $val;
+  -moz-border-radius: $val;
+  -webkit-border-radius: $val;
+}
+@mixin borderLeft($val){
+border-top-left-radius: $val;
+-moz-top-left-radius: $val;
+-webkit-top-left-radius: $val;
+border-bottom-left-radius: $val;
+-moz-bottom-left-radius: $val;
+-webkit-bottom-left-radius: $val;
+}
+@mixin borderRight($val){
+border-top-right-radius: $val;
+-moz-top-right-radius: $val;
+-webkit-top-right-radius: $val;
+border-bottom-right-radius: $val;
+-moz-bottom-right-radius: $val;
+-webkit-bottom-right-radius: $val;
+}
+@mixin borderTop($val){
+border-top-right-radius: $val;
+-moz-top-right-radius: $val;
+-webkit-top-right-radius: $val;
+border-top-left-radius: $val;
+-moz-top-left-radius: $val;
+-webkit-top-left-radius: $val;
+}
+@mixin borderBottom($val){
+border-bottom-right-radius: $val;
+-moz-bottom-right-radius: $val;
+-webkit-bottom-right-radius: $val;
+border-bottom-left-radius: $val;
+-moz-bottom-left-radius: $val;
+-webkit-bottom-left-radius: $val;
+}
+@mixin imageZoom{
+  -moz-transition: all 0.5s ease; 
+-webkit-transition:all  0.5s ease; 
+-o-transition: all  0.5s ease;
+            -ms-transition: all 0.5s ease;
+}
+@mixin imageZoomHover{
+    -moz-transform:scale(2); 
+-webkit-transform:scale(2);
+-o-transform:scale(2);
+     -ms-transition: scale(2);
+}
+
+
+/// Triangle helper mixin
+/// @param {Direction} $direction - Triangle direction, either `top`, `right`, `bottom` or `left`
+/// @param {Color} $color [currentcolor] - Triangle color 
+/// @param {Length} $size [1em] - Triangle size
+@mixin triangle($direction, $color: currentcolor, $size: 1em) {
+  @if not index(top right bottom left, $direction) {
+    @error "Direction must be either `top`, `right`, `bottom` or `left`.";
+  }
+
+  width: 0;
+  height: 0;
+  content: '';
+  z-index: 2;
+  border-#{opposite-position($direction)}: ($size * 1.5) solid $color;
+  
+  $perpendicular-borders: $size solid transparent;
+  
+  @if $direction == top or $direction == bottom {
+    border-left:   $perpendicular-borders;
+    border-right:  $perpendicular-borders;
+  } @else if $direction == right or $direction == left {
+    border-bottom: $perpendicular-borders;
+    border-top:    $perpendicular-borders;
+  }
+}
+
+
+
+
+
+/**
+     * ----------------------------------------------------------------
+     * Generals
+     * ----------------------------------------------------------------
+*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.lazy {
+    display: none;
+}
+
+@mixin clearfixa{
+  &:after{
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+.clearfixa{
+  @include clearfixa;
+}
+
+$susy: (
+    columns: 12,        
+    column-width: 65px,
+    gutters:20px/65px,  
+    // gutter-position: inside-static,
+    math: static,
+    flow: ltr,
+     // global-box-sizing: border-box,
+    // debug: (image: show)
+);
+
+
+
+.btn{
+  @include borderRadius(3px);
+    // border-bottom: 3px solid darken($brand-primary, 0.8%);
+}
+
+.title-spacing{
+      text-align: justify;
+    word-spacing: -1px;
+    /* word-wrap: break-word; */
+    word-break: break-all;
+}
+.text-spacing{
+      text-align: justify;
+    word-spacing: -1px;
+    /* word-wrap: break-word; */
+    word-break: break-word;
+}
+.imageStyle{
+      @include borderRadius(2px);
+                background: #f8f7f3;
+    padding: 5px;
+    border: 1px solid #eceae4;
+          &:hover{
+                      opacity: 0.9;
+      @include transition(0.3s);
+                    }
+}
+
+a{
+  &:hover{
+    @include transition(0.4s);
+    text-decoration: none;
+  }
+}
+
+.imageShadow{
+  padding: 5px;
+  background-color: #fff;
+    border: 1px solid #ececec;
+    @include borderRadius(3px);
+    @include boxShadow( 1px 1px 3px #555);
+}
+.imageShadowSmall{
+  padding: 4px;
+  background-color: #fff;
+    border: 1px solid #ececec;
+    @include borderRadius(3px);
+    @include boxShadow( 1px 1px 3px #555);
+}
+
+.nopadding-left{
+    padding-left: 0px !important;
+}
+.nopadding-right{
+        padding-right: 0px !important;
+}
+.nopadding{
+    @extend .nopadding-left;
+    @extend .nopadding-right;
+}
+
+#title-wrap{
+    
+    .title-wrap-inner{
+        
+    background-color: #F6F8F9;
+        padding: 30px 15px;
+    }
+    
+       h1{
+        margin: 0;
+          font-size: 26px;
+//          margin-bottom: 10px;
+    }
+}
+#pagination-wrapper{
+       text-align: center;
+    border-top: 2px solid #eee;
+}
+
+.container{
+  @include container; 
+}
+
+/**
+     * ------------------------------------------------------------
+     * Narrow Content
+     * ------------------------------------------------------------
+*/
+.narrow-content{
+      @include span(7);
+      padding-left: span(2);
+}
+
+
+
+/**
+     * ------------------------------------------------------------
+     * Headlines / Titles
+     * ------------------------------------------------------------
+*/
+
+.page-title {
+    margin: 20px  0;
+    text-align: center;
+
+    h2{
+      font-size: 30px;
+    margin: 0px;
+        padding-bottom: 8px;
+    position: relative;
+    display: block;
+    &:before{
+            background: none repeat scroll 0 0  $brand-primary;
+          bottom: 0;
+          content: "";
+          height: 5px;
+          left: 0;
+          position: absolute;
+          width: 100%;
+    }
+    &:after{
+            background-color:  $gray-base;
+              bottom: 0;
+              content: "";
+              height: 5px;
+              left: 50%;
+              margin-left: -15px;
+              position: absolute;
+              width: 40px;
+    }
+    }
+}
+
+
+
+/**
+* -----------------------------------------------------------------------------------------------
+* Search Page
+* ------------------------------------------------------------------------------------------------
+*/
+
+     .close{
+      // background-image: url("../images/close.png");
+      // background-repeat: no-repeat;
+width: 1.3em;
+height: 1.3em;
+  position: absolute;
+  cursor: pointer;
+  top: 0px;
+  right: 10px;
+  @include transition(all .4s);
+     }
+
+.main-seaerch-close {
+    color: #fff;
+    padding-top: 5px;
+    font-size: 1.6em;
+}
+
+
+
+               #main-site-search-form{
+                  background-color: $brand-primary;
+                    font-size: 1.2em;
+                   position: relative;
+                       padding: 15px;
+                    display: none;
+                div{
+                    text-align: center;
+
+                  input{
+ 
+                          width: 50%;
+  border: none;
+                      color: #fff;
+                      height: 50px;
+                      border: 2px solid darken($brand-primary, 6%);
+                       background-color: darken($brand-primary, 5%);
+                      @include borderRadius(3px);
+  padding: 1em;
+                        &:focus{
+                      border: 2px solid darken($brand-primary, 11%);
+                       background-color: darken($brand-primary, 10%);
+                       outline: none;
+                   }
+                  }
+
+                  #close-search{
+                    @extend .close;
+
+                    position: absolute;
+        top: 22px;
+    right: 190px;
+                  }
+                    
+                    .btn-search{
+                            height: 50px;
+                         border: 2px solid darken($brand-primary, 11%);
+                       background-color: darken($brand-primary, 10%);
+                        
+                        &:hover{
+                            border: 2px solid darken($brand-primary, 6%);
+                       background-color: darken($brand-primary, 5%); 
+                        }
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                }
+
+               }
+
+
+
+/**
+     * ------------------------------------------------------------
+     * main content
+     * ------------------------------------------------------------
+*/
+#main-content{
+    padding: 20px;
+    border: 1px solid #eee;
+    margin-top: 30px;
+    @include borderTop(6px);
+    border-bottom: 4px solid #eee;
+              
+                   
+   }
+
+   #main-content-wrap-right-sidebar{
+    padding-right: 0px;
+    h1{
+          margin-right: 15px  !important;
+    }
+   }
+
+   #main-content-wrap-right-sidebar-single-news{
+       @extend #main-content-wrap-right-sidebar;
+       padding: 40px  0px 0px; 
+   }

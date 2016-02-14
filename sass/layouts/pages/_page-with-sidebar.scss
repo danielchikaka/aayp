@@ -1,0 +1,855 @@
+/**
+     * ----------------------------------------------------------------
+     * CSS SASS file for APS-HRMNET website
+     * For All Pages having Sidebars
+     * There is SASS Inside, be careful !
+     * Author: Daniel Chikaka
+     * Email: daniel.chikaka@ega.go.tz
+     * ----------------------------------------------------------------
+ */
+
+
+
+/**
+    * ------------------------------------------------------------
+    * Right Sidebar Page
+    * ------------------------------------------------------------
+*/
+.right-sidebar-main-content {
+        @include span(9 of 12 );
+        margin-right: 0px;
+}
+     .single-news-page{
+           img{ 
+            // width: 100%;
+                margin-left: -15px !important;
+           }
+        }
+
+
+#sidebar{
+  @include span(3 of 12  last);
+}
+
+.how-do-i-sidebar{
+    // @extend  #home-sidebar;
+    border: 1px solid #eee;
+}
+
+#page-with-sidebar-wrap{
+      
+}
+
+.request-service{
+  text-align: center;
+  padding: 45px;
+    background-color: #f7f7f7;
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+.btn-primary{
+      color: $gray-base;
+      font-weight: 600;
+}
+  
+}
+
+
+
+#main-content{
+  @extend #full-width-page;
+    // min-height: 10em;
+ 
+    
+    h2{
+        font-size: 22px;
+          margin-bottom: 10px;
+    }
+    h3{
+        font-size: 16px;
+          margin-bottom: 10px;
+    }
+    h4{
+        font-size: 14px;
+          margin-bottom: 10px;
+    }
+}
+
+#news-single-id{
+   @include span(1.5 of 9  wide no-gutters inside-static);
+   padding-top: 30px;
+   p{
+    font-size: 12px  !important;
+    font-weight: 600;
+   }
+}
+
+#main-content.news-single{
+   // @include span(7.5 of 9 last);
+    // width: span(7);
+    // margin-left: span(1);
+        position: relative;
+    top: -30px;
+        min-height: 14.5em;
+          @include borderTop(0px);
+
+        h1{
+              padding: 0px;
+    margin: 0px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+        }
+        .date-time{
+            font-size: 12px;
+            font-weight: 600;
+        }
+}
+
+
+
+
+/**
+    * ------------------------------------------------------------
+    * News  & Publications & Videos Pages
+    * ------------------------------------------------------------
+*/
+
+.publications{
+  table{
+
+    tr{
+      td{
+        a{
+              padding-left: 5px;
+          &:before{
+              font-family: "tanzania-diary-board";
+              content: "m";
+          }
+        }
+      }
+    }
+  }
+}
+
+#news-wrap{
+
+  width: span(6);
+  margin-left: span(1.5);
+    
+
+    p{
+        margin-bottom: 0;
+
+    }
+    a{
+
+              h4{
+            margin: 0px;
+              font-size: 22px;
+      font-weight: 300;
+      font-family: $font-family-base;
+      // text-transform: uppercase;
+          padding: 10px 0 5px;
+              border-bottom: 1px solid #eee;
+              margin-bottom: 5px;
+
+        }
+               &:hover{
+            text-decoration: none;
+          }
+    }
+
+    .date-time{
+      font-size: 12px;
+    }
+
+
+      #news-header{
+  img{
+    width: 100%;
+    height: auto;
+  }
+  h1{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ececec;
+  }
+  }
+
+    ul{
+        padding: 0;
+        
+        li{
+            list-style-type: none;
+            // border-bottom: 1px solid #ececec;
+              margin-top: 30px;
+  padding-bottom: 30px;
+      display: inline-block;
+      width: 100%;
+      border-bottom: 4px solid  #ececec;
+
+      img{
+            padding: 5px;
+    background-color: #fff;
+    width: 570px;
+    height: 320px;
+    border: 1px solid #ececec;
+       @include borderRadius(3px);
+    @include boxShadow(1px 1px 3px #555);
+      }
+            
+            &:first-child{
+                margin-top: 0px;
+            }
+            &:last-child{
+              border-bottom: 0px;
+            }
+            
+
+        }
+    }
+    
+
+    
+}
+
+.news-wrap-single{
+  img{
+    width: 100%;
+    height: auto;
+  }
+  p{
+      margin: 0 0 12px;
+  }
+}
+
+
+.videos-wrap{
+  h4{
+    margin-top: 10px;
+  }
+}
+
+
+
+/**
+     * ------------------------------------------------------------
+     * Press Release
+     * ------------------------------------------------------------
+*/
+.press-release-page #news-wrap{
+    h4{
+      border-bottom: 0px;
+    }
+}
+
+/**
+    * ------------------------------------------------------------
+    * Gallery Page
+    * ------------------------------------------------------------
+*/
+
+ul.gallery-all{
+    
+    li{
+
+      h4{
+            font-size: 18px !important;
+    padding: 0px !important;
+                margin-bottom: 0px  !important;
+      }
+
+      a{
+        position: relative;
+
+        h4{
+                font-size: 18px !important;
+                padding: 0px !important;
+                margin: 0px  !important;
+        }
+
+            .gallery-caption{
+                position: absolute;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 98%;
+    top: 77px;
+    left: 6px;
+    padding: 15px;
+    @include borderRight(3px);
+       h4{
+          border-bottom: 0px solid #eee  !important;
+        color:  #f2f2f2;
+      
+
+        &:hover{
+            color: #fff;
+        }
+       }
+           }
+      }
+    }
+}
+
+
+
+
+ul#images-thumbs{
+    margin-top: 10px;
+    li{
+        border-bottom: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        float: left;
+//           border-right: 10px solid #fff;
+//        &:last-child{
+//            margin-right: 0;
+//        }
+//                    &:last-child{
+//                border-right: 0px;
+//            }
+        a{
+            
+        }
+        img{
+            // width: 100%;
+//              height: 175px;
+           
+
+        }
+    }
+} 
+
+.gallery-wrap{
+    img{
+        // width: 100%;
+        // height: auto;
+          padding-right: 5px;
+    }
+}
+.gallery-thumb{
+    padding-top: 5px;
+     @include span(5.86);
+}
+
+.gallerie{
+  // border-right: 5px solid #fff;
+  // margin-right: 5px;
+  // width: 200px;
+  @include gallery(4  no-gutters fluid  inside-static);
+  float: left;
+  &:last-of-type{
+    // margin-right: 0px;
+    // border-right: 0px;
+    // border-left: 5px solid transparent;
+  }
+}
+
+.date-comment{
+   @include span(5.8);
+
+       border-bottom: 1px solid;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+         border-bottom: 1px solid #ececec;
+
+       // margin-bottom: 40px;
+
+   .date-time{
+    float: left;
+   }
+   .user-post{
+    float: right;
+   }
+}
+
+.gallery-counter-wrap{
+
+  img{
+    z-index: 1;
+  }
+
+  position: relative;
+
+  .gallery-counter{
+    position: absolute;
+    z-index: 10;
+    top: 26%;
+  left: 20%;
+    span{
+        font-size: 50px;
+  font-family: serif;
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+
+}
+
+.gallery-trigger{
+
+  a{
+    outline: none;
+  }
+}
+
+/**
+     * ------------------------------------------------------------
+     * Search Results
+     * ------------------------------------------------------------
+*/
+.read-more{
+    font-size: 12px;
+  font-weight: 600;
+  border-bottom: 1px solid #fff;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+}
+
+ul.search-results{
+  li{
+    // border-bottom: 0px;
+  }
+}
+.faq-content{
+
+      .faq{
+         counter-reset: my-badass-counter;
+
+          }
+    
+      dt{
+          position: relative;
+          font: bold 16px Georgia;
+          padding: 4px 0 10px 0;
+          &:before{
+        content: counter(my-badass-counter);
+          counter-increment: my-badass-counter;
+          position: absolute;
+          left: 0;
+          top: 0;
+          font: bold 50px/1 Sans-Serif;
+          }
+      }
+      dd{
+          margin: 0 0 50px 0;
+      }
+      dt, dd{
+          padding-left: 50px;
+      }
+
+      .faq-read-more{
+            a{
+              font-size: 14px;
+          font-weight: 600;
+          }
+      }
+}
+
+
+/**
+     * ------------------------------------------------------------
+     * Contact form
+     * ------------------------------------------------------------
+*/
+.contact-page{
+
+
+          form{
+
+          display: block;
+
+
+
+           // background-color: #f7f7f7;
+          //  z-index: 10;
+           position: relative;
+               // z-index: 999;
+                // line-height: 2em;
+                // right:0px;
+                // width: 100%;
+              // top: 38px;
+              // padding: 15px;
+        // height: 38px;
+        input[type="text"], input[type="email"], textarea, input[type="number"]{
+          // position: absolute;
+          // height: 38px;
+  // top: 38px;
+  // right: 0;
+  width: 49%;
+  background-color: #fff;
+  // color: #ecf0f5;
+  border: 2px solid #eee;
+  background-color: #f4f4f4;
+      padding: 8px;
+          // padding-right: 50px;
+      outline: none;
+      @include transition(0.3s);
+      @include  borderRadius(3px);
+
+      &:focus{
+        border: 2px solid #f4f4f4;
+              background-color: #fff;
+              color: #333;
+      }
+
+        }
+
+        input#answ{
+          width: 49%;
+        }
+
+        input#subject, textarea,  input[type="number"]{
+  background-color: #f4f4f4;
+          width: 98.5%;
+
+
+      &:focus{
+        border: 2px solid #f4f4f4;
+              background-color: #fff;
+              color: #333;
+      }
+
+        }
+
+        input[type="checkbox"]{
+          margin-top: 15px;
+        }
+
+        &:before{
+          width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+
+            border-bottom: 5px solid black;
+        }
+
+        .input-group-btn{
+          position: absolute;
+    right: 38px;
+    bottom: 2px;
+        }
+        .btn{
+          @include borderLeft(0px);
+        }
+
+        }
+}
+
+
+
+
+/**
+     * ------------------------------------------------------------
+     * Events
+     * ------------------------------------------------------------
+*/
+.events{
+
+                             ul#date-time-location{
+                              padding: 0px;
+                              // width: 100%;
+                              margin: 0;
+
+                              a.text-center{
+                                position: relative;
+                                margin-left: span(4);
+                                &:hover{
+                                  text-decoration: none;
+                                }
+                                  &:before{
+                                      content: "l";
+                                         font-family: "tanzania-diary-board";
+                                         position: relative;
+                                         top: 1px;
+
+                                  }
+                              }
+                     
+                              li{
+                                list-style-type: none;
+                                // display: inline-block;
+                                    margin-bottom: 20px;
+                                             span{
+                                    font-size: 12px;
+                                    font-weight: 600;
+                              }
+                              a{
+                                position: relative;
+                                &:after{
+                                     content: "c";
+                                       font-family: "tanzania-diary-board";
+                                       position: absolute;
+                                       top: -1px;
+                                }
+                              }
+                                width: span(6);
+                                // @include span(3 of 9);
+                                margin-left: span(1.5);
+                                 // padding: gutter();
+                                border: 1px solid #bdc3c7;
+                                    padding: 15px;
+                                @include borderRadius(3px);
+                                p{
+                                  margin: 0px;
+                                      margin: 10px 0;
+                                  // text-align: justify;
+                                }
+
+                                // &:nth-child(3n){
+                                //   margin-right: 0;
+                                // }
+                              }
+
+               
+                            }
+}
+
+#main-content.events-page{
+    padding: 0px;
+
+    img.event-flier{
+      width:100%;
+      height: 480px;
+    }
+
+
+    .event-page-content{
+          padding: 15px  span(1);
+          ul{
+            padding: 0px;
+                padding-left:  span(0.7);
+
+                p{
+                      margin: 0px;
+                }
+
+            li{
+              list-style-type: none;
+              @include gallery(3.5 of 7);
+              margin-bottom: 15px;
+              h4{
+                text-transform: uppercase;
+                font-size: 18px;
+                margin: 0px;
+                margin-bottom: 4px;
+
+              }
+              
+            }
+          }
+
+          h2{
+            font-size: 18px;
+          }
+
+          #event-sponsors-logos{
+            border-top: 4px solid #eee;
+            padding-top: 10px;
+            margin-top: 10px;
+
+            ul{
+              padding-left: 0px;
+              li{
+                float: left;
+                @include gallery(2 of 7);
+              }
+            }
+          }
+    }
+
+
+}
+
+
+
+    /**
+         * ------------------------------------------------------------
+         * FAQ
+         * ------------------------------------------------------------
+    */
+
+    @mixin arrow-down($size: 10px, $color: #fff){
+  width: 0; 
+  height: 0; 
+  border-left: $size solid transparent;
+  border-right: $size solid transparent;
+  border-top: $size solid $color;
+}
+
+@mixin arrow-right($size: 10px, $color: #fff){
+  width: 0; 
+  height: 0; 
+  border-top: $size solid transparent;
+  border-bottom: $size solid transparent;
+  border-left: $size solid $color;
+}
+
+
+
+
+
+.accordion {
+  // width: 302px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+/* all accordion styles below here */
+
+.accordion {
+  
+  dl {
+    
+    // width: 302px;
+    @include transition-duration(350ms);
+    
+    &:hover {
+      // @include box-shadow(0px 0px 10px 3px rgba(0, 0, 0, .25));
+    }
+    
+    dt {
+      
+      a {
+        background-color: $link-color;
+        position: relative;
+        width: 100%;
+        height: 50px;
+        display: block;
+        line-height: 50px;
+        text-align: left;
+        cursor: pointer;
+        font-weight: 300;
+        padding-left: 30px;
+        color: #fff;
+        text-decoration: none;
+        
+        .arrow {
+            @include arrow-right(6px);
+            position: absolute;
+            left: 14px; 
+            top: 18px;
+            
+            .cssanimations & {
+              @include transition-duration(350ms);
+
+              &.down-anim {
+                @include rotate(90deg);
+              }
+            }
+          
+            &.down {
+              @include arrow-down(6px);
+              top: 21px;
+              left: 12px;
+            }
+        }
+      }
+      
+      &.active, &:hover {
+        a {
+            background-color:  $brand-primary;
+        }
+      }
+      &.active {
+        a {
+          // @include box-shadow(inset 0px -4px 8px 0px rgba(0, 0, 0, .2));
+        }
+      }
+    }
+    
+    dd {
+      background-color: #ffffff;
+      // @include background-image(linear-gradient(top, rgb(255, 255, 255), rgb(247, 247, 247)));
+      // @include filter-gradient(rgb(255, 255, 255), rgb(247, 247, 247), vertical);
+      padding: 10px;
+      display: none;
+      // height: 293px;
+      
+      &.active {
+        display: block;
+      }
+      
+      p {
+        line-height: 1.4;
+      }
+    }
+    
+  }
+}
+
+
+
+
+
+
+
+
+/**
+     * ------------------------------------------------------------
+     * Stakeholders Page
+     * ------------------------------------------------------------
+*/
+
+.stake-page{
+
+  ul{
+
+     padding: 0 120px;
+
+    li{
+
+      list-style-type: none;
+      float: left;
+          margin-bottom: 30px;
+
+      @include gallery(3.5 of 7);
+      
+
+      h4{
+            font-family: inherit;
+            font-size: 20px !important;
+      }
+
+      img{
+          width: 150px  !important;
+    height: 70px  !important;
+    @extend .imageShadowSmall;
+      }
+      p{
+            margin: 0;
+      }
+    }
+
+  }
+}
+
+/**
+     * ------------------------------------------------------------
+     * Biography Page
+     * ------------------------------------------------------------
+*/
+
+      .profile-show-image{
+        float: left;
+        margin: 0 10px 0px 0;
+
+        img{
+        margin-bottom: 5px;
+           @extend .imageShadow;
+      }
+
+      p{
+        margin: 0px;
+        text-align: center;
+      }
+
+
+      }
+
+
+
+

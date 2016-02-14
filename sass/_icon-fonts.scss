@@ -1,0 +1,108 @@
+/**
+     * ----------------------------------------------------------------
+     * Icon Fonts
+     * Author: Daniel Chikaka
+     * Email: daniel.chikaka@ega.go.tz
+     * ----------------------------------------------------------------
+*/
+
+
+@font-face {
+  font-family: "tanzania-diary-board";
+  src:url("../fonts/tanzania-diary-board.eot");
+  src:url("../fonts/tanzania-diary-board.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/tanzania-diary-board.woff") format("woff"),
+    url("../fonts/tanzania-diary-board.ttf") format("truetype"),
+    url("../fonts/tanzania-diary-board.svg#tanzania-diary-board") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "tanzania-diary-board" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "tanzania-diary-board" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "a";
+}
+.icon-search:before {
+  content: "b";
+}
+.icon-c-right:before {
+  content: "c";
+}
+.icon-left-circle:before {
+  content: "d";
+}
+.icon-right-circle:before {
+  content: "e";
+}
+.icon-facebook:before {
+  content: "f";
+}
+.icon-twitter:before {
+  content: "g";
+}
+.icon-google:before {
+  content: "h";
+}
+.icon-youtube:before {
+  content: "i";
+}
+.icon-flickr:before {
+  content: "j";
+}
+.icon-linkedin:before {
+  content: "k";
+}
+.icon-refresh:before {
+  content: "l";
+}
+.icon-download:before {
+  content: "m";
+}
+
+.icon-close:before {
+  content: "n";
+}
+
+.icon-chevron-right:before {
+  content: "o";
+}
+.icon-chevron-left:before {
+  content: "p";
+}
+
+.icon-angle-right:before {
+  content: "q";
+}
+.icon-angle-left:before {
+  content: "r";
+}
+.icon-play-alt:before {
+  content: "s";
+}
+
