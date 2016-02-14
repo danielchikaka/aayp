@@ -100,6 +100,13 @@ border-bottom-left-radius: $val;
 }
 
 
+$browser-context:  $font-size-base; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+
 
 
 
@@ -141,8 +148,9 @@ $susy: (
     columns: 12,        
     column-width: 65px,
     gutters:20px/65px,  
+    container: auto,
     // gutter-position: inside-static,
-    math: static,
+    // math: static,
     flow: ltr,
      // global-box-sizing: border-box,
     // debug: (image: show)

@@ -9,7 +9,7 @@
 
  #main-menu{
     background-color: #F8F7F3;
-  border-top: 2px solid  #E0DFDB;
+  border-top: em(2px) solid  #E0DFDB;
     position: relative;
         bottom: 0px;
             // display: inline-block;
@@ -25,7 +25,7 @@
     }
 
     .navbar{
-            margin-top: -6px;
+            margin-top:  em(-6px);
             ul{
                 li{
 
@@ -38,7 +38,7 @@
 
 
                     a{
-                            // border-right: 1px solid #222;
+                            // border-right:  em(1px) solid #222;
                     }
                 }
             }
@@ -56,7 +56,7 @@
 
     		a{
     			text-transform: uppercase;
-    			// border-right: 1px solid #d6d6d6;
+    			// border-right:  em(1px) solid #d6d6d6;
                                      font-family:  $headings-font-family;
     		}
     	}
@@ -64,7 +64,7 @@
 
     .form-control{
     	    border: 0px solid #ececec;
-    	    height: 30px;
+    	    height:  em(30px);
     	    background-color: #ffffff;
 
     	                &:focus{
@@ -92,16 +92,16 @@
 .navbar-form {
     // margin-left: -15px;
     // margin-right: -15px;
-    // padding: 1px 15px;
+    // padding:  em(1px) 15px;
     border-top: 0px solid transparent;
     border-bottom: 0px solid transparent;
     -webkit-box-shadow: none;
     box-shadow: none;
     margin-top: 0px;
     margin-bottom: 0px;
-        padding: 5px 0;
+        padding: em(5px)  0;
         position: absolute;
-        right: 5px;
+        right:  em(5px);
 
 
     .form-group{
@@ -109,13 +109,13 @@
     	position: relative;
 
     	input{
-    		    padding-right: 25px;
+    		    padding-right:  em(25px);
     	}
 
     	.icon{
     		position: absolute;
-    		    top: 6px;
-    right: 6px;
+    		    top:  em(6px);
+    right:  em(6px);
     	}
     }
 }
@@ -128,18 +128,18 @@
     z-index: 1000;
     display: none;
     float: left;
-    min-width: 160px;
+    min-width:  em(160px);
     padding: 0;
     margin: 0px 0 0;
     list-style: none;
-    font-size: 15px;
+    font-size:  em(15px);
     text-align: left;
     background-color:  #fff;
-    border: 1px solid #ccc;
-    border: 1px solid rgba(0,0,0,0.15);
-    border-radius: 2px;
-    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    border:  em(1px) solid #ccc;
+    border:  em(1px) solid rgba(0,0,0,0.15);
+    border-radius:  em(2px);
+    -webkit-box-shadow: 0 em(6px)  em(12px) rgba(0,0,0,0.175);
+    box-shadow: 0 em(6px)  em(12px) rgba(0,0,0,0.175);
     background-clip: padding-box;
 
 li{
