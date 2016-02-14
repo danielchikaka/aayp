@@ -1,1 +1,0 @@
-document.write("Hi there. My Nam is Daniel");

@@ -1,1 +1,0 @@
-document.write("Hi there, how are you?");
